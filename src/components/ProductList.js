@@ -6,7 +6,7 @@ import useFetch from '../hooks/useFetch';
 
 const ProductList = ({ products: productsProp }) => {
   // Call useFetch only when products are not passed as a prop.
-  const { data: productsFromHook = [], loading } = useFetch('/products.json');
+  const { data: productsFromHook = [], loading } = useFetch('/product.json');
   const products = productsProp || productsFromHook;
 
   const [search, setSearch] = useState('');
