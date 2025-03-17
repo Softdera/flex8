@@ -1,5 +1,5 @@
 import { createStore } from 'redux';
-import cartReducer from './reducers'; // Ensure you export the reducer from this file
+import cartReducer from './cartReducer.js';
 
 const store = createStore(cartReducer);
 
